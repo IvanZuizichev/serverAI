@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Результат</title>
+    <link rel="stylesheet" href="/static/css/result.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Montserrat:ital,wght@0,500;1,200&display=swap"
+          rel="stylesheet">
+
+</head>
+<body>
+<img src="/static/img/logo.svg" id="logo">
+<div class="container">
+    <div class="text">
+        <h1>Ваш запрос:</h1>
+        <p class="request">{{ text }}</p>
+    </div>
+    <img src="/static/img/animation.gif" id="gif">
+    <img src="/static/img/cloud1.png" id="cloud1">
+    <img src="/static/img/cloud2.png" id="cloud2">
+    <img src="/static/img/cloud3.png" id="cloud3">
+    <div class="preview" id="preview_front"></div>
+    <div id="progressbar">
+        <div></div>
+    </div>
+    <p id="percentage">0%</p>
+</div>
+<div class="result">
+    <div>
+        <a href="request" class="again">Ещё раз</a>
+    </div>
+    <p class="a-request"><span class="up-green">Ваш запрос:</span> {{ text }}</p>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"
+        integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA=="
+        crossorigin="anonymous"></script>
+<script src="/static/js/back.js"></script>
+<script src="/static/js/result.js"></script>
+</body>
+</html>

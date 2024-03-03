@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Информация о нейросети</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Montserrat:wght@200;400&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/info.css">
+
+</head>
+<body>
+<img src="/static/img/logo.svg" id="logo" onclick="window.location.href='/'">
+<div class="container">
+    <div class="info_about_neuro">
+        <h1>Что это такое и <span class="green">как</span> это <span class="green">работает?</span></h1>
+        <p>Эта нейросеть называется Stable Diffusion. Разработала и выложила ее в открытый доступ компания Stability.ai.
+            Если не вдаваться в технические подробности, то эта нейросеть способна анализировать текст на английском
+            языке и выдавать изображение которое наиболее близко, по ее мнению, соответствует сделанному запросу.</p>
+    </div>
+    <div class="info_about_request">
+        <h1>Как <span class="green">правильно</span> составлять запросы?</h1>
+        <p>Быть конкретней. По запросу &laquo;Cute Cat&raquo; нейросеть выдаст кота со случайным окрасом, &laquo;Cute
+            Grey Cat&raquo; - только серых котов, а &laquo;Cute Grey Cat with blue eyes, wearing a bowtie&raquo;
+            голубоглазых серых котов с галстуком-бабочкой.
+            Называть конкретные художественные стили. Например по запросу &laquo;Cute Grey Cat, acrylic painting&raquo;
+            нейросеть &laquo;нарисует&raquo; кота акриловыми красками. А по запросу &laquo;Cute Grey Cat, Unreal Engine
+            rendering&raquo; будет уже 3Д модель.</p>
+    </div>
+</div>
+<a href="/request" class="submit"
+   style="top: 12vh;bottom: auto;right: calc((100vw - 1200px) / 2);font-size: 17px;">Назад</a>
+<a href="/creators" class="submit" style="right: calc((100vw - 336px) / 2);">Создатели сайта</a>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+<script src="/static/js/back.js"></script>
+</body>
+</html>

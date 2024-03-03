@@ -1,0 +1,75 @@
+body {
+  background-color: #747474;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+#logo {
+    margin-left: 100px;
+    width: 275px;
+    height: 100px;
+    margin-bottom: 15vh;
+}
+.container {
+  width: 60%;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%; 
+}
+
+.creator h4 {
+  font-size: 50px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.creator p {
+  font-size: 30px;
+  font-weight: 200;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.creator:nth-child(even) {
+  float: right;
+  margin-top: -150px;
+  border-right: 3px solid #85df25;
+  padding-right: 2vw;
+  text-align: right;
+
+}
+
+.creator:nth-child(odd) {
+  border-left: 3px solid #85df25;
+  padding-left: 2vw;
+}
+
+.first-creator {
+  margin-bottom: 200px;
+}
+
+.button {
+  text-decoration: none;
+  position: absolute;
+  margin-top: 12vh;
+  font-size: 30px;
+  color: white;
+  margin-left: 27vw;
+  font-weight: 300;
+  border: 3px solid #85df25; 
+  padding: 10px 50px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  border: 3px solid #b6f178; 
+
+}
+
+.button:active {
+  border: 3px solid white; 
+
+}
+
+.logo {
+  margin-bottom: 15vh;
+}

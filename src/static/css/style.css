@@ -1,0 +1,21 @@
+#ai-sub-form>* {
+    margin: 3px 0px;
+}
+
+#ai-sub-form {
+    width: 50vw;
+}
+
+#ready-image {
+    width: 50vw;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.flex {
+    display: flex;
+}
+#reset-btn {
+margin: 10px 0px
+}

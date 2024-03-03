@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block body %}
+<div id="f-container" class="container flex justify-content-center align-content-center align-items-center"
+    style="height: 100vh">
+    <form id="ai-sub-form" class="flex flex-column align-items-center">
+        <label for="prompt" class="form-label">Что хотите увидеть?</label>
+        <input id="prompt" type="text" name="prompt" class="form-control">
+        <input type="submit">
+    </form>
+</div>
+<div id="l-container" class="container flex justify-content-center align-content-center align-items-center"
+    style="height: 100vh;display: none;">
+    <p id="progress">Прогресс: 0%</p>
+</div>
+<div id="r-container" class="container flex flex-column justify-content-center align-content-center align-items-center"
+    style="height: 100vh;display: none;">
+    <div id="ready-image"></div>
+    <div id="reset-btn" class="btn btn-success">Ещё раз</div>
+</div>
+{% endblock %}

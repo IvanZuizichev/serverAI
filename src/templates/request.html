@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Запрос к нейросети</title>
+
+
+    <link rel="stylesheet" href="/static/css/request.css">
+    <link rel="stylesheet" href="/static/css/slider.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Montserrat:ital,wght@0,500;1,200&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<img src="/static/img/logo.svg" id="logo" onclick="window.location.href='/'">
+<div class="container">
+    <form action="result" method="post">
+        <div class="input">
+            <h2>Введите свой запрос:</h2>
+            <p id="info">Не знаете, как работает нейронная сеть? <a href="info">Узнать</a></p>
+            <label>
+                <textarea name="text" placeholder="Введите запрос (на английском)"></textarea>
+            </label>
+            <p class="styles">Примеры стилей рисования:<br>
+                <span class="green">sketching</span> &ndash; скетч, предварительный набросок<br>
+                <span class="green">doodling</span> &ndash; грифонаж, беглые наброски импровизационного свойства<br>
+                <span class="green">line art</span> &ndash; линейный рисунок<br>
+                <span class="green">polygon art</span> &ndash; изображение из геометрических фигур<br>
+                <span class="green">realism</span> &ndash; реализм<br>
+                <span class="green">hyperrealism</span> &ndash; гиперреализм<br>
+                <span class="green">cartoon</span> &ndash; мультипликационный стиль</p>
+            <p class="styles alert">Напишите свой запрос по другому</p>
+            <a href="examples" class="examples">Примеры работ</a>
+        </div>
+        <div class="slider-container">
+            <div id="request_slider" style="margin-top: 80px"></div>
+        </div>
+        <p class="styles slider-text">Значение того, насколько точно нейросеть будет следовать запросу</p>
+        <p class="styles slider-text-sub">(чем больше, тем точнее)</p>
+        <a href="result.html" class="submit">Нарисовать</a>
+        <a class="submit">Нарисовать</a>
+        <input type="text" name="scale" id="scale" hidden>
+        <input id="subform" type="submit" hidden>
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+        integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+<script src="/static/js/slider.js"></script>
+<script src="/static/js/back.js"></script>
+</body>
+</html>
